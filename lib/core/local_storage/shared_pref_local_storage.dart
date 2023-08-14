@@ -1,7 +1,7 @@
 import 'package:dark_theme/core/local_storage/local_storage_i.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SharedPrefLocalStorage extends LocalStorage {
+class SharedPrefLocalStorage implements LocalStorage {
   @override
   Future<bool> getBool(String key) async {
     final pref = await SharedPreferences.getInstance();
